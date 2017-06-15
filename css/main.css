@@ -1,0 +1,12 @@
+* {
+    font-family: 'Flexo', sans-serif;
+}
+
+#search-abc {
+    margin-top: 20px;
+}
+
+.pkm {
+    display: inline-block;
+    margin: 0 20px;
+}
