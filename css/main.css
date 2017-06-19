@@ -32,3 +32,22 @@ button {
 button:focus {
     background: none;
 }
+
+.modal {
+    position: absolute;
+    background-color: rgba(45, 23, 157, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.div-modal {
+    width: 70%;
+    background-color: white;
+    padding: 2rem;
+}

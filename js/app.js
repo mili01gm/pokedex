@@ -4,7 +4,13 @@ const render = (root) => {
     root.empty();
 
     const wrapper = $('<div class="wrapper"></div>');
-    wrapper.append(Grid(_=> render(root)));
+    const update = () => {
+        render(root);
+    }
+    wrapper.append(Grid(update));
+    if (state.selectedPokemon != null) {
+        wrapper.append(Modal());
+    }
     root.append(wrapper);
 
 };
@@ -19,7 +25,7 @@ $(_ => {
 
         if (err) { return alert(err.message); }
 
-        state.pokemons = json;
+        state.pokemons = json.pokemon_entries;
 
         const root = $('.root');
         render(root);
