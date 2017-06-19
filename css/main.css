@@ -8,5 +8,27 @@
 
 .pkm {
     display: inline-block;
-    margin: 0 20px;
+    margin: 5px;
+    padding: 0;
+    width: 16%;
+    height: 20vw;
+}
+
+.container {
+    width: 95% !important;
+    text-align: center;
+}
+
+.pokegrid {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+button:focus {
+    background: none;
 }
